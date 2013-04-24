@@ -1,0 +1,44 @@
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script  type="text/javascript">
+
+ function fillContent(){  
+  			var mycars=new Array()
+mycars[0]="Saab"
+mycars[1]="Volvo"
+mycars[2]="BMW"
+
+  var user =    
+    {    
+        "username":"andy",   
+        "age":20,   
+        "info": { "tel": "123456", "cellphone": "98765"},   
+        "address":   
+            [   
+                {"city":"beijing","postcode":"222333"},   
+                {"city":"newyork","postcode":"555666"}   
+            ]   
+    }   
+           window.client.saveUserInfoAndRecommendApps('alvinLee');
+           
+           
+           
+        }  
+        
+        function insert(ss){
+     
+          document.getElementById("content").innerHTML =ss['a'];  
+        }
+
+
+</script>  
+         
+</head>
+<body>
+    <p id="content"></p>  
+    <p>你喜欢:.....</p>  
+    <p>游戏,应用,工具</p>  
+    <p><button type="button" onClick="fillContent()">确定</button></p>  
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--文章下一页按钮-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+          android:drawable="@drawable/information_article_previous_page_button_default"/>
+    <item android:state_focused="true"
+          android:drawable="@drawable/information_article_previous_page_button_default"/>
+    <item android:drawable="@drawable/information_article_previous_page_button_default"/>
+</selector>

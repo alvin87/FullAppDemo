@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/recommend_list_item_background"
+    android:orientation="vertical" >
+
+    <!-- 顶层布局 -->
+
+    <RelativeLayout
+        android:id="@+id/install_introduce_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 图片布局 -->
+
+        <LinearLayout
+            android:id="@+id/install_introduce_icon_layout"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/install_introduce_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="2dip"
+                android:src="@drawable/app43_icon" />
+        </LinearLayout>
+
+        <!-- 程序名称 大小布局 -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@id/install_introduce_icon_layout" >
+
+            <TextView
+                android:id="@+id/install_introduce_appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/install_introduce_kind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/install_introduce_appname"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:text="分类:"
+                android:textColor="#8c8c8c"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/install_introduce_kind_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/install_introduce_kind"
+                android:layout_below="@id/install_introduce_appname"
+                android:layout_marginRight="20dip"
+                android:layout_toRightOf="@id/install_introduce_kind"
+                android:text="游戏"
+                android:textColor="#8c8c8c"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/install_introduce_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/install_introduce_kind"
+                android:layout_below="@id/install_introduce_appname"
+                android:layout_marginRight="5dip"
+                android:layout_toRightOf="@id/install_introduce_kind_text"
+                android:text="大小:"
+                android:textColor="#8c8c8c"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/install_introduce_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/install_introduce_size"
+                android:layout_below="@id/install_introduce_appname"
+                android:layout_toRightOf="@id/install_introduce_size"
+                android:text="16.4M"
+                android:textColor="#8c8c8c"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <!-- 选择程序 -->
+
+        <CheckBox
+            android:id="@+id/install_introduce_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <!-- 介绍布局 -->
+
+    <LinearLayout
+        android:id="@+id/install_introduce_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!-- 介绍详情 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/install_introduce_more_layout"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/install_introduce_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="这主要是因为本框架是应对通信需求非常严格的项不知道你们和我的,但是敬爱哦无奈"
+                    android:textColor="#8c8c8c"
+                    android:textSize="12dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

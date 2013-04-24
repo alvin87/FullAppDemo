@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/information_main_layout"
+      android:background="#FFFFFF">
+      <RelativeLayout
+            android:id="@+id/information_top_banner_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/banner_icon">
+            <TextView
+                  android:id="@+id/information_top_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:gravity="center"
+                  android:text="@string/tab_hot_name"
+                  android:textSize="@dimen/banner_title_size"
+                  android:textColor="@color/white"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="3dip" />
+      </RelativeLayout>      
+      <FrameLayout
+            android:id="@+id/information_frame_layout"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ListView
+                  android:id="@+id/commend_app_listview"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1"
+                  android:divider="#c0c0c0"
+                  android:dividerHeight="0.5dip"
+                  android:cacheColorHint="#00000000"
+                  android:fadingEdge="none" />
+            <ProgressBar
+                  android:id="@+id/applist__refresh_loadprogress"
+                  android:layout_width="@dimen/round_progress_bar_size"
+                  android:layout_height="@dimen/round_progress_bar_size"
+                  android:indeterminateDrawable="@anim/round_progress_bar_1"
+                  android:visibility="invisible"
+                  android:layout_gravity="center" />
+      </FrameLayout>
+</LinearLayout>

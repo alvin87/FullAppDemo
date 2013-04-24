@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="2dip" >
+
+    <ImageView
+        android:id="@+id/finishIcon"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_marginTop="3dip"
+        android:src="@drawable/download_animation" />
+
+    <TextView
+        android:id="@+id/finishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/finishIcon"
+        android:layout_toRightOf="@id/finishIcon"
+        android:paddingLeft="6dip"
+        android:textColor="#FF000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/finishTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/finishName"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/finishName"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@id/finishIcon"
+        android:paddingLeft="3dip"
+        android:textColor="@color/introduce"
+        android:textSize="13sp" />
+
+</RelativeLayout>

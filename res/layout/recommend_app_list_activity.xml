@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/information_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/information_top_banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/information_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="3dip"
+            android:gravity="center"
+            android:text="@string/tab_commend_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/banner_title_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/information_navi_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/information_navi_background"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/information_title_view_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/manager_download"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/information_navi_all"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/information_navi_game"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/information_navi_softwave"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/information_navi_must"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/information_frame_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/commend_app_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="#c0c0c0"
+            android:dividerHeight="0.5dip"
+            android:fadingEdge="none" />
+
+        <ProgressBar
+            android:id="@+id/applist__refresh_loadprogress"
+            android:layout_width="@dimen/round_progress_bar_size"
+            android:layout_height="@dimen/round_progress_bar_size"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@anim/round_progress_bar_1"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

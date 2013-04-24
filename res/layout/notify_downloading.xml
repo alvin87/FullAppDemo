@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dip" >
+
+    <ImageView
+        android:id="@+id/notificationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download_animation" />
+
+    <TextView
+        android:id="@+id/notificationPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_toRightOf="@id/notificationImage"
+        android:paddingLeft="6dip"
+        android:text="下载"
+        android:textColor="#FF000000" />
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/notificationPercent"
+        android:paddingLeft="6dip"
+        android:textColor="#FF000000"
+        android:textSize="15dip" />
+
+    <ProgressBar
+        android:id="@+id/notificationProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/notificationPercent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/notificationPercent"
+        android:paddingLeft="6dip"
+        android:paddingRight="3dip"
+        android:paddingTop="2dip" />
+
+</RelativeLayout>

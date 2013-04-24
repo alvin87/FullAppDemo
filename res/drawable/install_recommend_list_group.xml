@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--list_item按钮-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+      <item android:state_window_focused="false"  
+            android:drawable="@drawable/list_item_selected_bg" />
+      <item android:state_focused="true"
+            android:drawable="@drawable/information_list_item_background_default"></item>
+      <item android:state_pressed="true"
+            android:drawable="@drawable/information_list_item_background_default" ></item>
+</selector> 

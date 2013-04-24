@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/show_picture_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/focus_bg" >
+
+        <com.app43.appclient.module.adapter.BigImageGallery
+            android:id="@+id/show_picture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spacing="0dip" />
+
+        <ProgressBar
+            android:id="@+id/header_gallery_loadprogress"
+            android:layout_width="@dimen/round_progress_bar_size"
+            android:layout_height="@dimen/round_progress_bar_size"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@anim/round_progress_bar_1"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

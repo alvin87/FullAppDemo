@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_content_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/news_content_top_banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/news_content_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dip"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/banner_title_size" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/news_content_center_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <WebView
+            android:id="@+id/news_content_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:onClick="fullScreen" />
+
+        <ProgressBar
+            android:id="@+id/news_content_loading_progress"
+            android:layout_width="@dimen/round_progress_bar_size"
+            android:layout_height="@dimen/round_progress_bar_size"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@anim/round_progress_bar_1" />
+    </FrameLayout>
+
+</LinearLayout>

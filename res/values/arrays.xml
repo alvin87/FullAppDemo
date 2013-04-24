@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_channel_items">
+        <item>news</item>
+        <item>events</item>
+        <item>product</item>
+        <item>area</item>
+    </string-array>
+    <string-array name="select_dialog_item1">
+        <item>相机拍摄</item>
+        <item>手机相册</item>
+    </string-array>
+    <string-array name="select_dialog_item2">
+        <item>相机拍摄</item>
+        <item>手机相册</item>
+        <item>清除图片</item>
+    </string-array>
+    <string-array name="select_dialog_item3">
+        <item>刷新</item>
+        <item>分享</item>
+        <item>收藏帖子</item>
+        <item>只看楼主</item>
+    </string-array>
+    <string-array name="select_dialog_item4">
+        <item>刷新</item>
+        <item>分享</item>
+        <item>取消收藏</item>
+        <item>只看楼主</item>
+    </string-array>
+    <string-array name="select_dialog_item7">
+        <item>刷新</item>
+        <item>分享</item>
+        <item>收藏帖子</item>
+        <item>查看所有帖子</item>
+    </string-array>
+    <string-array name="select_dialog_item8">
+        <item>刷新</item>
+        <item>分享</item>
+        <item>取消收藏</item>
+        <item>查看所有帖子</item>
+    </string-array>
+    <string-array name="select_dialog_item5">
+        <item>刷新</item>
+        <item>收藏版块</item>
+        <item>查看精华帖</item>
+    </string-array>   
+    <string-array name="select_dialog_item6">
+        <item>刷新</item>
+        <item>取消收藏</item>
+        <item>查看精华帖</item>
+    </string-array>
+    
+    <string-array name="select_dialog_item9">
+        <item>刷新</item>
+        <item>收藏版块</item>
+        <item>查看所有帖子</item>
+    </string-array>   
+    <string-array name="select_dialog_item10">
+        <item>刷新</item>
+        <item>取消收藏</item>
+        <item>查看所有帖子</item>
+    </string-array>
+    <string-array name="select_dialog_item11">
+        <item>相机拍摄</item>
+    </string-array>
+    <string-array name="select_dialog_item12">
+        <item>相机拍摄</item>
+        <item>清除图片</item>
+    </string-array>
+</resources>

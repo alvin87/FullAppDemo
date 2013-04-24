@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_banner_background">
+        <ImageButton android:id="@+id/more_suggestion_activity_back"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="@dimen/button_margin"
+           android:background="@null"
+           android:src="@drawable/app_back_button"/>
+        <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity = "center"
+           android:text="@string/feedback_title"
+           android:layout_centerVertical="true"
+           android:textSize="@dimen/banner_title_size"
+           android:textColor="@android:color/white"
+           android:textStyle="bold"/>
+        <ImageButton android:id="@+id/more_suggestion_activity_submit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dip"
+           android:background="@null"
+           android:src="@drawable/app_submit_button"
+          />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fill_content_bg"
+        >
+        <ProgressBar
+            android:id="@+id/more_suggestion_refresh_loadprogress"
+            android:layout_width="@dimen/round_progress_bar_size"
+            android:layout_height="@dimen/round_progress_bar_size"
+            android:indeterminateDrawable="@anim/round_progress_bar_1"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+        />
+        <EditText android:id="@+id/more_suggestion_content"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="8dip"
+            android:paddingBottom="25dip"
+            android:gravity="left"
+            android:maxLength="1000"
+            android:background="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#979797"
+            android:layout_gravity="left|bottom"
+            android:text="@string/opinion"
+            />
+    </FrameLayout>
+</LinearLayout>

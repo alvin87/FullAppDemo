@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 全局组件颜色定义文件 -->
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#b8b8b8</color>
+    <color name="black">#000000</color>
+    <color name="navi_text">#E48946</color>
+    <color name="version_loading">#70B2DD</color>
+    <color name="deep_gray">#6A6A6A</color>
+    <color name="blue">#BFEFFF</color>
+    <color name="red">#AF3D3D</color>
+    <color name="light_blue">#BBFFFF</color>
+    <color name="orange">#EE5A1E</color>
+    <color name="light_gray">#484848</color>
+    <color name="expandListView_divider">#c0c0c0</color>
+    <color name="title">#484848</color>
+    <color name="introduce">#9C9C9C</color>
+    <color name="size">#484848</color>
+    <color name="state">#9C9C9C</color>
+    <color name="content_size_key">#6F6F6F</color>
+    <color name="content_size_value">#F49E55</color>
+    <color name="content_name_text">#2F82AA</color>
+    <color name="content_word">#3D3D3D</color>
+    <color name="content_background">#F4F4F4</color>
+    <color name="content_company">#666666</color>
+    <color name="content_fallery_bg">#C1C1C1</color>
+    <color name="blue_light">#478db1</color>
+
+</resources>

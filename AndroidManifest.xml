@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PUBLISH CHECK -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app43.appclient"
+    android:versionCode="14"
+    android:versionName="1.1.0" >
+
+    <!-- 权限申明 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-sdk android:minSdkVersion="7" >
+    </uses-sdk>
+
+    <application
+        android:debuggable="false"
+        android:icon="@drawable/app43_icon"
+        android:label="@string/app_name"
+        android:name=".AppClient"
+        android:theme="@style/theme" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4f4b7b2252701559db000009" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="app43market" />
+        <!-- Launcher界面 -->
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:icon="@drawable/app43_icon"
+            android:label="@string/app_name"
+            android:name="com.app43.appclient.module.launch.LauncherActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app43.appclient.module.launch.LauncherUserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 装机推荐界面 -->
+        <activity
+            android:name="com.app43.appclient.module.launch.InstallRecommendNewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 主界面 -->
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.app43.appclient.module.tabframe.MainTabFrameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Tab精品推荐界面 -->
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.tabframe.RecommendAppActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Tab热门排行界面 -->
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.tabframe.HotGridActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.hot.HotListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.hot.GameListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Tab猜你喜欢 -->
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.tabframe.GuessInterestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Tab应用管理界面 -->
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.tabframe.AppManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 下载服务 使用跨进程的话会静态数据有问题android:process=":download" 后期修改 -->
+        <service android:name="com.app43.appclient.module.common.control.DownloadService" >
+            <intent-filter >
+                <action android:name="com.download.service" />
+            </intent-filter>
+        </service>
+        <service android:name="com.app43.download.test.ServiceDownload" >
+            <intent-filter >
+                <action android:name="com.service.download" />
+            </intent-filter>
+        </service>
+
+        <!-- Tab新手课堂 -->
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.tabframe.NewsGridActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.news.NewsContentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 菜单中Activity -->
+
+
+        <!-- 收藏夹 -->
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.menu.FavouriteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.menu.AboutUsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.menu.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 公用Activity -->
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.common.activity.ContentViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.common.activity.FocusContentViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.app43.appclient.module.common.activity.BigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/fullScreen" >
+        </activity>
+
+        <!-- 友盟意见反馈模块 -->
+        <activity
+            android:name="com.feedback.ui.SendFeedback"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity android:name="com.feedback.ui.FeedbackConversations" >
+        </activity>
+        <activity
+            android:configChanges="keyboard"
+            android:name="com.feedback.ui.FeedbackConversation" >
+        </activity>
+        <!-- 微博分享 -->
+        <activity
+            android:label="微博登陆"
+            android:launchMode="singleTask"
+            android:name="cn.com.pcgroup.common.android.share.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:label="微博分享"
+            android:name="cn.com.pcgroup.common.android.share.ChangeAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name="cn.com.pcgroup.common.android.oauth.CallbackActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="CallbackActivity"
+                    android:scheme="weibo4android" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.com.pcgroup.common.android.share.ShareActivity" />
+        <activity
+            android:name="cn.com.pcgroup.common.android.oauth.SinaOAuth"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.com.pcgroup.common.android.oauth.TencentOAuth"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="cn.com.pcgroup.common.android.oauth.ShareActivity" />
+        <activity android:name="cn.com.pcgroup.common.android.oauth.ChangeAccountActivity" />
+    </application>
+
+</manifest>

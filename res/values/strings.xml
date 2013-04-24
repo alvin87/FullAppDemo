@@ -1,0 +1,82 @@
+<resources>
+
+    <string name="dialog_app_exit_title">退出应用？</string>
+    <string name="dialog_app_exit_message">确定退出峰峰网客户端？</string>
+    <string name="dialog_del_app">是否要删除所选?</string>
+
+    <!-- 界面文本 -->
+    <string name="app_name">锋锋应用中心</string>
+    <string name="tab_commend_name">精品推荐</string>
+    <string name="tab_hot_name">热门排行</string>
+    <string name="tab_guess_name">猜你喜欢</string>
+    <string name="tab_manager_name">应用管理</string>
+    <string name="tab_news_name">新手课堂</string>
+    <string name="recommend_content_home_title">应用详情</string>
+    <string name="favourite_title">收藏夹</string>
+    <string name="about_us_title">关于我们</string>
+    <string name="feedback_title">意见反馈</string>
+    <string name="exit_title">退出应用</string>
+    <string name="opinion">请输入您的宝贵意见</string>
+    <string name="all_select">全选</string>
+    <string name="not_all_select">反选</string>
+
+    <!-- 新手客堂 名称 -->
+    <string name="new_1">通话</string>
+    <string name="new_2">联系人</string>
+    <string name="new_3">信息与邮件</string>
+    <string name="new_4">网络与浏览器</string>
+    <string name="new_5">连接与同步</string>
+    <string name="new_6">通知与状态</string>
+    <string name="new_7">照相与相册</string>
+    <string name="new_8">音乐与铃声</string>
+    <string name="new_9">系统设置</string>
+
+    <!-- 热门排行 -->
+    <string name="hot1">游戏</string>
+    <string name="hot2">浏览器</string>
+    <string name="hot3">工具</string>
+    <string name="hot4">输入法</string>
+    <string name="hot5">生活</string>
+    <string name="hot6">办公</string>
+    <string name="hot7">阅读</string>
+    <string name="hot8">娱乐</string>
+    <string name="hot9">社交</string>
+    <string name="hot10">旅游</string>
+    <string name="hot11">新闻</string>
+    <string name="hot12">安全</string>
+    <string name="hot13">摄影</string>
+    <string name="hot14">系统</string>
+    <string name="hot15">影音</string>
+    <string name="hot16">导航</string>
+    <string name="hot17">购物</string>
+    <string name="hot18">理财</string>
+
+    <!-- 游戏分类 -->
+    <string name="game1">赛车竞速</string>
+    <string name="game2">动作射击</string>
+    <string name="game3">角色冒险</string>
+    <string name="game4">体育竞技</string>
+    <string name="game5">策略模拟</string>
+    <string name="game6">休闲益智</string>
+    <string name="game7">经营养成</string>
+    <string name="game8">棋牌游戏</string>
+    <string name="game9">网络游戏</string>
+    <!-- 信息手机页面相关 -->
+    <string name="user_info_text">    感谢你的使用,填写以下信息,有助于我们给你推荐最适合的应用.
+      </string>
+    <string name="user_info_title">我的信息</string>
+    <string name="user_info_btn">直接进入主界面</string>
+    <string name="user_info_download">一键下载</string>
+    <string name="user_info_phone_sys">你的手机Android系统版本为: </string>
+    <string name="user_info_bottom_title">我们推荐适合您手机的应用,请放心下载安装</string>
+    <string name="user_info_goto_recommend">您的信息有助于我们为您提供更精准的应用程序,确认放弃吗?</string>
+    <string name="user_info_goto_tips">提示</string>
+
+    <!-- 提示文本 -->
+    <string name="hit_network_failure">对不起，您的网络不太顺畅，请设置网络或稍候再试</string>
+    <string name="hit_no_picture">暂无图片</string>
+    <string name="hit_prase_json_failure">获取的数据不正确，请稍候再试</string>
+    <string name="hit_weibo_login_title">登录新浪微博</string>
+    <string name="safe_text">已通过锋锋安全认证</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_us_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/about_us_top_banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/about_us_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+            android:text="@string/about_us_title"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/about_us_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/about_us_top_title"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/about_us_top_title"
+            android:gravity="center"
+            android:textColor="@color/version_loading"
+            android:textSize="13sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/about_us_center_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <WebView
+            android:id="@+id/about_us_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:onClick="fullScreen" />
+
+        <ProgressBar
+            android:id="@+id/about_us_loading_progress"
+            android:layout_width="@dimen/round_progress_bar_size"
+            android:layout_height="@dimen/round_progress_bar_size"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@anim/round_progress_bar_1" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/information_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/userinfo_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/information_top_banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/information_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="3dip"
+            android:gravity="center"
+            android:text="@string/user_info_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/banner_title_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/information_frame_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/user_info_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="8dip"
+            android:text="@string/user_info_text"
+            android:textColor="@color/blue_light"
+            android:textSize="15sp" >
+        </TextView>
+
+        <FrameLayout
+            android:id="@+id/about_us_center_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ProgressBar
+                android:id="@+id/user_info_loading_progress"
+                android:layout_width="@dimen/round_progress_bar_size"
+                android:layout_height="@dimen/round_progress_bar_size"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@anim/round_progress_bar_1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/user_info_alltext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginTop="5dip"
+                            android:text="你的性别是 : "
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:id="@+id/userinfo_sexLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/userinfo_sex0"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/userinfo_sex0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/userinfo_sex1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dip"
+                                android:layout_marginTop="10dip"
+                                android:text="你的职业是 : "
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:id="@+id/userinfo_workLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/userinfo_work1"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/userinfo_work0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:id="@+id/userinfo_work1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:id="@+id/userinfo_work2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dip"
+                                android:layout_marginTop="10dip"
+                                android:text="你的爱好是 : "
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dip"
+                                    android:orientation="horizontal" >
+
+                                    <Button
+                                        android:id="@+id/userinfo_interest0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dip"
+                                        android:background="@drawable/userinfo_lable_default"
+                                        android:text="美食家"
+                                        android:textColor="@color/white" />
+
+                                    <Button
+                                        android:id="@+id/userinfo_interest1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dip"
+                                        android:background="@drawable/userinfo_lable_default"
+                                        android:text="文艺青年"
+                                        android:textColor="@color/white" />
+
+                                    <Button
+                                        android:id="@+id/userinfo_interest2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/userinfo_lable_default"
+                                        android:text="时尚族"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dip"
+                                    android:orientation="horizontal" >
+
+                                    <Button
+                                        android:id="@+id/userinfo_interest3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dip"
+                                        android:background="@drawable/userinfo_lable_default"
+                                        android:text="爱生活"
+                                        android:textColor="@color/white" />
+
+                                    <Button
+                                        android:id="@+id/userinfo_interest4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dip"
+                                        android:background="@drawable/userinfo_lable_default"
+                                        android:text="驴友"
+                                        android:textColor="@color/white" />
+
+                                    <Button
+                                        android:id="@+id/userinfo_interest5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/userinfo_lable_default"
+                                        android:text="摄影控"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dip"
+                                    android:orientation="horizontal" >
+
+                                    <Button
+                                        android:id="@+id/userinfo_interest6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dip"
+                                        android:background="@drawable/userinfo_lable_default"
+                                        android:text="社交达人"
+                                        android:textColor="@color/white" />
+
+                                    <Button
+                                        android:id="@+id/userinfo_interest7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dip"
+                                        android:background="@drawable/userinfo_lable_default"
+                                        android:text="旅游达人"
+                                        android:textColor="@color/white" />
+
+                                    <Button
+                                        android:id="@+id/userinfo_interest8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/userinfo_lable_default"
+                                        android:text="购物狂"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/userinfo_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dip"
+            android:background="@drawable/userinfo_btn_selector" />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/user_info_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black" >
+        </TextView>
+
+        <Button
+            android:id="@+id/user_info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_info_btn"
+            android:visibility="gone" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

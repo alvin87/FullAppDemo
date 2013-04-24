@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 全局组件尺寸定义文件 -->
+<resources>
+
+    <dimen name="navigation_bar_height">44dip</dimen>
+    <dimen name="button_margin">10dip</dimen>
+    <dimen name="round_progress_bar_size">30dip</dimen>
+    <dimen name="refresh_button_margin">14dip</dimen>
+    <dimen name="banner_title_size">22sp</dimen>
+    <dimen name="hit_text_size">12sp</dimen>
+    <dimen name="title_text_size">12px</dimen>
+    <dimen name="more_main_item_text_5">13dip</dimen>
+    <dimen name="more_main_item_text_4">20dip</dimen>
+    <dimen name="information_navi_arr_width">10dip</dimen>
+    <dimen name="infromation_navi_arr_margin_left">3dip</dimen>
+    <dimen name="information_navi_arr_margin_right">1dip</dimen>
+    <dimen name="progressbar_width">35dip</dimen>
+    <dimen name="contentView_kind_text_size">13sp</dimen>
+    <dimen name="contentView_download_times_size">15sp</dimen>
+    <dimen name="contentView_big_title">16sp</dimen>
+    <dimen name="introduce">11sp</dimen>
+    <dimen name="size">14sp</dimen>
+    <dimen name="state">11sp</dimen>
+    <dimen name="progress_width">60dip</dimen>
+    <dimen name="progress_height">5dip</dimen>
+    <dimen name="content_progress_width">100dip</dimen>
+    <dimen name="group_height">46dip</dimen>
+    <dimen name="group_size">20sp</dimen>
+    <dimen name="content_text_margin">12dip</dimen>
+    <dimen name="content_gallery_height">260dip</dimen>
+    <dimen name="list_item_name">14sp</dimen>
+    <dimen name="manager_item_name">15sp</dimen>
+    <dimen name="content_progress_text">15sp</dimen>
+
+</resources>
